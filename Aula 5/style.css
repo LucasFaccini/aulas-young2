@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Ojuju&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Ojuju", sans-serif;
+}
+
+body{
+    background-color: rgb(212, 181, 250);
+    width: 100vw;
+    height: 100vh;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    display: flex;
+    width: 80%;
+    height: 80%;
+
+}
+
+.cont-esq{
+    background-color: rgb(241, 219, 180);
+    width: 50%;
+    height: 100%;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-dir{
+    background-color: #fff;
+    width: 50%;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+img{
+    width: 80%;
+}
