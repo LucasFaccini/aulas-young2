@@ -1,49 +1,136 @@
-@import url('https://fonts.googleapis.com/css2?family=Ojuju&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Ojuju", sans-serif;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
 }
 
-body{
-    background-color: rgb(212, 181, 250);
+
+body {
+    background-color: rgb(182, 181, 249);
+
     width: 100vw;
     height: 100vh;
 
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-section{
+section {
     display: flex;
     width: 80%;
     height: 80%;
 
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.266);
 }
 
-.cont-esq{
+.conteiner-esquerda {
     background-color: rgb(241, 219, 180);
     width: 50%;
     height: 100%;
 
-    display:flex;
+    /* ALINHAR AO CENTRO */
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.cont-dir{
+img {
+    width: 80%;
+}
+
+.conteiner-direita {
     background-color: #fff;
     width: 50%;
 
-    display:flex;
-    justify-content: center;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.flex {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* padding: 30px; */
+}
+
+button{
+    background-color: rgb(91, 82, 212);
+    color: antiquewhite;
+    border-radius: 3px;
+    padding: 5px;
+    border: none;
+}
+
+.inputs{
+    display: flex;
     flex-direction: column;
 }
 
-img{
-    width: 80%;
+.inputs label{
+    font-weight: bold;
+    font-size: 12px;
+    padding: 5px 0px;
+}
+
+.inputs input{
+    border-radius: 5px;
+    border: 1px solid grey;
+    box-shadow: 1px 1px 6px gray;
+    height: 30px;
+    width: 200px;
+}
+
+.inputs input::placeholder{
+    padding-left: 10px;
+}
+
+.inputs input:hover{
+    border: none;
+    box-shadow: 3px 3px 6px rgb(91, 82, 212);
+}
+
+.inputs input:focus{
+    outline: 1.5px solid rgb(91, 82, 212);
+}
+
+.cont-gen{
+    width: 100%;
+}
+
+.cont-gen h2{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.cont-gen div div label{
+    font-size: 12px;
+    font-weight: bold
+}
+
+.continuar{
+    width: 100%;
+}
+
+h1{
+    position: relative;
+}
+
+h1::after{
+    content: "";
+    background-color: rgb(91, 82, 212);
+    height: 5px;
+    width: 50px;
+    margin: 0;
+    position: absolute;
+    border-radius: 10px;
+    border: none;
+    left: 0;
+    top: 30px;
 }
