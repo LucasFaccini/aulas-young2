@@ -85,22 +85,35 @@ input::-webkit-outer-spin-button{
 }
 
 .conteiner-results{
-    display: flex;
+    display: grid;
+    grid-template-columns:1fr;
     flex-direction: column;
     gap: 12px;
     align-items: center;
 }
-
+.conteiner-results div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
 .conteiner-v{
-    background-color: #1b5df7;
-    border: 1px solid black;
-    border-radius: 4px;
+    width: 100%;
     margin-top: 10px;
-    
+    display: flex;
 }
 a{
     width: 100%;
-    padding: 6px;
+    padding: 10px;
     text-align: center;
+    border-radius: 10px;
+    background-color: #00dbde;
+    text-decoration: none;
+    color: aliceblue;
+    transition: background-color 0.4s ease-in-out;
 }
 
+a:hover{
+    background-color: #092d83; 
+    transition: background-color 0.4s ease-in-out;
+    color: white;
+}
