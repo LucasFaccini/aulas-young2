@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="cont-gerador">
+        <div class="head-gerador">
+            <div class="senha">
+                <span id="senha"></span>
+                <button id="copy"><i></i></button>
+            </div>
+        </div>
+        <div class="body-gerador-senha">
+            <div class="form">
+                <label>Tamanho da senha</label>
+                <input type="number" id="tamanho" min="6" max="18">
+            </div>
+            <div class="form">
+                <label for="maiusculas">maiusculas</label>
+                <input type="checkbox" id="maiusculas" name="maiusculas">
+            </div>
+            <div class="form">
+                <label for="minúsculas">minusculas</label>
+                <input type="checkbox" id="minusculas" name="minúsculas">
+            </div>
+            <div class="form">
+                <label for="numeros">numeros</label>
+                <input type="checkbox" id="numeros" name="numeros">
+            </div>
+            <div class="form">
+                <label for="caracteres-especiais">caracteres especiais</label>
+                <input type="checkbox" id="caracteres-especiais" name="caracteres-especiais">
+            </div>
+            <div class="cont-botoes">
+                <button type="submit" class="submit">Gerar senha</button>
+                <button type="reset" class="reset">Limpar</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
